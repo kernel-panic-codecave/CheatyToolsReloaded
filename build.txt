@@ -1,7 +1,7 @@
 displayName = Cheaty Tools Reloaded
 author = WitherTech
 version = 0.1
-homepage = https://github.com/withertech
+homepage = https://github.com/withertech/CheatyToolsReloaded
 includeSource = true
 hideCode = false
 hideResources = false
