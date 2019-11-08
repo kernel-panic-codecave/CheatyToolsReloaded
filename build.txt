@@ -1,0 +1,8 @@
+displayName = Cheaty Tools Reloaded
+author = WitherTech
+version = 0.1
+homepage = https://github.com/withertech
+includeSource = true
+hideCode = false
+hideResources = false
+includePDB = true
