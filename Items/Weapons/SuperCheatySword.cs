@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Weapons
 {
@@ -15,7 +16,7 @@ namespace CheatyToolsReloaded.Items.Weapons
         public override void SetDefaults()
         {
             item.crit = 100;
-            item.damage = 100000000;           //The damage of your weapon
+            item.damage = GetInstance<SuperCheatyConfigWeapons>().SwordDamage;           //The damage of your weapon
             item.melee = true;          //Is your weapon a melee weapon?
             item.width = 40;            //Weapon's texture's width
             item.height = 40;           //Weapon's texture's height

@@ -1,5 +1,6 @@
 using Terraria;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Armor
 {
@@ -18,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = 100000000;
+            item.defense = GetInstance<SuperCheatyConfigArmor>().RangedDefense[2];
             item.expert = true;
 
         }

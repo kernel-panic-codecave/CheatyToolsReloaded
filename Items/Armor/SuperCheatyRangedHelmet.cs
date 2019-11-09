@@ -31,8 +31,8 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "Ranged Attacks Always Crit";
-            player.rangedCrit = 100;
+            player.setBonus = GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier + "x Ranged Damage";
+            player.rangedDamage = player.rangedDamage * GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier;
         }
         public override void ArmorSetShadows(Player player)
         {

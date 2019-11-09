@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Tools
 {
@@ -26,7 +27,7 @@ namespace CheatyToolsReloaded.Items.Tools
 			item.shootSpeed = 40f;
             item.rare = 13;
             item.expert = true;
-            item.axe = 20000000;
+            item.axe = GetInstance<SuperCheatyConfigTools>().ChainsawAxePower/5;
             item.value = Item.buyPrice(platinum: 100000000);
             item.autoReuse = true;
         }

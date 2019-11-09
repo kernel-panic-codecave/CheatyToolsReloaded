@@ -1,5 +1,6 @@
 using Terraria;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Accessories
 {
@@ -26,7 +27,7 @@ namespace CheatyToolsReloaded.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = 100000000;
+            player.wingTimeMax = GetInstance<SuperCheatyConfigAccessories>().WingFlightTime;
         }
 
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

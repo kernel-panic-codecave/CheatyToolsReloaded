@@ -1,6 +1,8 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
+
 
 namespace CheatyToolsReloaded.Items.Tools
 {
@@ -20,7 +22,7 @@ namespace CheatyToolsReloaded.Items.Tools
             item.height = 40;
             item.useTime = 2;
             item.useAnimation = 2;
-            item.pick = 100000000;
+            item.pick = GetInstance<SuperCheatyConfigTools>().PickPickaxePower;
             item.useStyle = 1;
             item.knockBack = 6;
             item.value = Item.buyPrice(platinum: 100000000);

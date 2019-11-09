@@ -28,7 +28,7 @@ namespace CheatyToolsReloaded.Items.Weapons
             item.useTime = 25;
             item.shootSpeed = 16f;
             item.knockBack = 2.5f;
-            item.damage = 100000000;
+            item.damage = GetInstance<SuperCheatyConfigWeapons>().YoyoDamage;
             item.rare = 13;
             item.expert = true;
 

@@ -1,6 +1,8 @@
 
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria;
+using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Tools
 {
@@ -13,7 +15,6 @@ namespace CheatyToolsReloaded.Items.Tools
 		}
 		public override void SetDefaults()
 		{
-			item.CloneDefaults(mod.ItemType("SuperCheatyPick"));
 			item.channel = true;
             item.damage = 1000;
             item.melee = true;
@@ -27,7 +28,9 @@ namespace CheatyToolsReloaded.Items.Tools
 			item.shootSpeed = 40f;
             item.rare = 13;
             item.expert = true;
-
+            item.value = Item.buyPrice(platinum: 100000000);
+            item.autoReuse = true;
+			item.pick = GetInstance<SuperCheatyConfigTools>().DrillPickaxePower;
 		}
     }
 }
