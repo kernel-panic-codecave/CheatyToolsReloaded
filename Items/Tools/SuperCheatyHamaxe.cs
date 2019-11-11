@@ -21,8 +21,8 @@ namespace CheatyToolsReloaded.Items.Tools
             item.height = 40;
             item.useTime = 2;
             item.useAnimation = 2;
-            item.axe = GetInstance<SuperCheatyConfigTools>().HamaxeAxePower/5;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
-            item.hammer = GetInstance<SuperCheatyConfigTools>().HamaxeHammerPower;      //How much hammer power the weapon has
+            item.axe = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().HamaxeAxePower/5;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
+            item.hammer = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().HamaxeHammerPower;      //How much hammer power the weapon has
             item.useStyle = 1;
             item.knockBack = 6;
             item.value = Item.buyPrice(platinum: 100000000);

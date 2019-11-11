@@ -30,7 +30,7 @@ namespace CheatyToolsReloaded.Items.Tools
             item.expert = true;
             item.value = Item.buyPrice(platinum: 100000000);
             item.autoReuse = true;
-			item.pick = GetInstance<SuperCheatyConfigTools>().DrillPickaxePower;
+			item.pick = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().DrillPickaxePower;
 		}
     }
 }

@@ -19,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = 100000000;
+            item.defense = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().RangedDefense[0];
             item.expert = true;
 
         }
@@ -31,8 +31,8 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier + "x Ranged Damage";
-            player.rangedDamage = player.rangedDamage * GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier;
+            player.setBonus = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().RangedDamageMultiplier + "x Ranged Damage";
+            player.rangedDamage = player.rangedDamage * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().RangedDamageMultiplier;
         }
         public override void ArmorSetShadows(Player player)
         {

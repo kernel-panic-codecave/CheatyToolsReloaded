@@ -27,7 +27,7 @@ namespace CheatyToolsReloaded.Items.Tools
 			item.shootSpeed = 40f;
             item.rare = 13;
             item.expert = true;
-            item.axe = GetInstance<SuperCheatyConfigTools>().ChainsawAxePower/5;
+            item.axe = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().ChainsawAxePower/5;
             item.value = Item.buyPrice(platinum: 100000000);
             item.autoReuse = true;
         }

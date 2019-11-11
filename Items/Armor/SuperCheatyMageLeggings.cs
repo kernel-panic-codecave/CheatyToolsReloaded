@@ -19,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = GetInstance<SuperCheatyConfigArmor>().MageDefense[2];
+            item.defense = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageDefense[2];
             item.expert = true;
 
         }

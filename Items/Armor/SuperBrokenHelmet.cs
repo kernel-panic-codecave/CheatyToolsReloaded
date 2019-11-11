@@ -31,11 +31,11 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = GetInstance<SuperCheatyConfigArmor>().TankHealthMultiplier + "x Max Health\n           " + GetInstance<SuperCheatyConfigArmor>().MageManaMultiplier + "x Max Mana\n           " + GetInstance<SuperCheatyConfigArmor>().SummonerMinionMultiplier + "x Minion Slots\n           " + GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier + "x Ranged Damage";
-            player.statLifeMax2 = player.statLifeMax * GetInstance<SuperCheatyConfigArmor>().TankHealthMultiplier;
-            player.statManaMax2 = player.statManaMax * GetInstance<SuperCheatyConfigArmor>().MageManaMultiplier;
-            player.maxMinions = player.maxMinions * GetInstance<SuperCheatyConfigArmor>().SummonerMinionMultiplier;
-            player.rangedDamage = player.rangedDamage * GetInstance<SuperCheatyConfigArmor>().RangedDamageMultiplier; 
+            player.setBonus = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().TankHealthMultiplier + "x Max Health\n           " + GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageManaMultiplier + "x Max Mana\n           " + GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().SummonerMinionMultiplier + "x Minion Slots\n           " + GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().RangedDamageMultiplier + "x Ranged Damage";
+            player.statLifeMax2 = player.statLifeMax * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().TankHealthMultiplier;
+            player.statManaMax2 = player.statManaMax * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageManaMultiplier;
+            player.maxMinions = player.maxMinions * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().SummonerMinionMultiplier;
+            player.rangedDamage = player.rangedDamage * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().RangedDamageMultiplier; 
         }
         public override void ArmorSetShadows(Player player)
         {

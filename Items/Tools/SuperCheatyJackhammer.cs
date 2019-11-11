@@ -27,7 +27,7 @@ namespace CheatyToolsReloaded.Items.Tools
 			item.shootSpeed = 40f;
             item.rare = 13;
             item.expert = true;
-            item.hammer = GetInstance<SuperCheatyConfigTools>().JackhammerHammerPower;
+            item.hammer = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().JackhammerHammerPower;
             item.value = Item.buyPrice(platinum: 100000000);
             item.autoReuse = true;
         }

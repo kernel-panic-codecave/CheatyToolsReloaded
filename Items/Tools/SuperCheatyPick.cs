@@ -22,7 +22,7 @@ namespace CheatyToolsReloaded.Items.Tools
             item.height = 40;
             item.useTime = 2;
             item.useAnimation = 2;
-            item.pick = GetInstance<SuperCheatyConfigTools>().PickPickaxePower;
+            item.pick = GetInstance<SuperCheatyConfig.SuperCheatyConfigTools>().PickPickaxePower;
             item.useStyle = 1;
             item.knockBack = 6;
             item.value = Item.buyPrice(platinum: 100000000);
