@@ -1,4 +1,4 @@
-using CheatyToolsReloaded.Projectiles;
+using CheatyToolsReloaded.Projectiles.Weapons;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

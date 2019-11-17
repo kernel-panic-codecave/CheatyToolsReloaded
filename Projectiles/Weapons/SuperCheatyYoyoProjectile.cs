@@ -1,8 +1,7 @@
-using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CheatyToolsReloaded.Projectiles
+namespace CheatyToolsReloaded.Projectiles.Weapons
 {
     public class SuperCheatyYoyoProjectile : ModProjectile
     {
