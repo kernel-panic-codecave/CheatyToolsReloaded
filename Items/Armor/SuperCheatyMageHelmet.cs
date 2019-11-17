@@ -19,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageDefense[0];
+            item.defense = GetInstance<SuperCheatyConfigArmor>().MageDefense[0];
             item.expert = true;
 
         }
@@ -31,8 +31,8 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageManaMultiplier + "x Max Mana";
-            player.statManaMax2 = player.statManaMax * GetInstance<SuperCheatyConfig.SuperCheatyConfigArmor>().MageManaMultiplier;
+            player.setBonus = GetInstance<SuperCheatyConfigArmor>().MageManaMultiplier + "x Max Mana";
+            player.statManaMax2 = player.statManaMax * GetInstance<SuperCheatyConfigArmor>().MageManaMultiplier;
         }
         public override void ArmorSetShadows(Player player)
         {

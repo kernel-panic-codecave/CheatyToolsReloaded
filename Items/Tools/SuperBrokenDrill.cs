@@ -6,12 +6,12 @@ using static Terraria.ModLoader.ModContent;
 
 namespace CheatyToolsReloaded.Items.Tools
 {
-	public class SuperCheatyDrill : ModItem
+	public class SuperBrokenDrill : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Super Cheaty Drill");
-            Tooltip.SetDefault("This is a Super Cheaty Drill and should only be used by cheaters.");
+			DisplayName.SetDefault("Super Broken Drill");
+            Tooltip.SetDefault("This is a Super Broken Drill and should only be used by cheaters.");
 		}
 		public override void SetDefaults()
 		{
@@ -24,13 +24,13 @@ namespace CheatyToolsReloaded.Items.Tools
 			item.useStyle = 5;
 			item.knockBack = 0;
 			item.UseSound = SoundID.Item23;
-			item.shoot = mod.ProjectileType("SuperCheatyDrill");
+			item.shoot = mod.ProjectileType("SuperBrokenDrill");
 			item.shootSpeed = 40f;
             item.rare = 13;
             item.expert = true;
             item.value = Item.buyPrice(platinum: 100000000);
             item.autoReuse = true;
-			item.pick = GetInstance<SuperCheatyConfigTools>().DrillPickaxePower;
+			item.pick = int.MaxValue;
 		}
     }
 }

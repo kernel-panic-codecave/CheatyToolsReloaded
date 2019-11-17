@@ -16,7 +16,7 @@ namespace CheatyToolsReloaded.Items.Weapons
         public override void SetDefaults()
         {
             item.crit = 100;
-            item.damage = GetInstance<SuperCheatyConfig.SuperCheatyConfigWeapons>().SwordDamage;           //The damage of your weapon
+            item.damage = GetInstance<SuperCheatyConfigWeapons>().SwordDamage;           //The damage of your weapon
             item.melee = true;          //Is your weapon a melee weapon?
             item.width = 40;            //Weapon's texture's width
             item.height = 40;           //Weapon's texture's height

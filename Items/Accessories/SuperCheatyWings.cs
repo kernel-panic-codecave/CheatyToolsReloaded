@@ -27,7 +27,7 @@ namespace CheatyToolsReloaded.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = GetInstance<SuperCheatyConfig.SuperCheatyConfigAccessories>().WingFlightTime;
+            player.wingTimeMax = GetInstance<SuperCheatyConfigAccessories>().WingFlightTime;
         }
 
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

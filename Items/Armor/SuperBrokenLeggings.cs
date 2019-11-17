@@ -20,7 +20,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = 100000000;
+            item.defense = int.MaxValue/3;
             item.expert = true;
 
         }
