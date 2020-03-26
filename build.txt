@@ -1,6 +1,6 @@
 displayName = Cheaty Tools Reloaded
 author = WitherTech
-version = 0.5
+version = 0.6
 homepage = https://github.com/withertech/CheatyToolsReloaded
 includeSource = true
 hideCode = false
