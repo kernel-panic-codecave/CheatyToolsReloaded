@@ -19,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = GetInstance<SuperCheatyConfigArmor>().TankDefense[0];
+            item.defense = GetInstance<SuperCheatyConfig>().TankDefense[0];
             item.expert = true;
 
         }
@@ -31,8 +31,8 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = GetInstance<SuperCheatyConfigArmor>().TankHealthMultiplier + "x Max Health";
-            player.statLifeMax2 = player.statLifeMax * GetInstance<SuperCheatyConfigArmor>().TankHealthMultiplier;
+            player.setBonus = GetInstance<SuperCheatyConfig>().TankHealthMultiplier + "x Max Health";
+            player.statLifeMax2 = player.statLifeMax * GetInstance<SuperCheatyConfig>().TankHealthMultiplier;
         }
         public override void ArmorSetShadows(Player player)
         {

@@ -19,7 +19,7 @@ namespace CheatyToolsReloaded.Items.Armor
             item.height = 18;
             item.value = Item.buyPrice(platinum: 100000000);
             item.rare = 13;
-            item.defense = GetInstance<SuperCheatyConfigArmor>().SummonerDefense[0];
+            item.defense = GetInstance<SuperCheatyConfig>().SummonerDefense[0];
             item.expert = true;
 
         }
@@ -31,8 +31,8 @@ namespace CheatyToolsReloaded.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = GetInstance<SuperCheatyConfigArmor>().SummonerMinionMultiplier + "x Minion Slots";
-            player.maxMinions = player.maxMinions * GetInstance<SuperCheatyConfigArmor>().SummonerMinionMultiplier;
+            player.setBonus = GetInstance<SuperCheatyConfig>().SummonerMinionMultiplier + "x Minion Slots";
+            player.maxMinions = player.maxMinions * GetInstance<SuperCheatyConfig>().SummonerMinionMultiplier;
         }
         public override void ArmorSetShadows(Player player)
         {

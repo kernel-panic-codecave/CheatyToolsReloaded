@@ -49,6 +49,7 @@ namespace CheatyToolsReloaded.Commands
             }
 
             caller.Player.QuickSpawnItem(type, stack);
+            Main.NewText(caller.Player.name + " Spawned " + stack + "x " + args[0].Replace("_", " "), 0, 255, 0);
         }
     }
 }

@@ -18,9 +18,7 @@ using Terraria.UI;
 
 namespace CheatyToolsReloaded
 {
-    [Label("Tools")]
-    [SeparatePage]
-    public class SuperCheatyConfigTools : ModConfig
+    public class SuperCheatyConfig : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
         [DefaultValue(100000000)]
@@ -41,24 +39,14 @@ namespace CheatyToolsReloaded
         [DefaultValue(100000000)]
         [Label("Super Cheaty Jackhammer Hammer Power")]
         public int JackhammerHammerPower;
-    }
-    [Label("Weapons")]
-    [SeparatePage]
-    public class SuperCheatyConfigWeapons : ModConfig
-    {
-        public override ConfigScope Mode => ConfigScope.ServerSide;
+
         [DefaultValue(100000000)]
         [Label("Super Cheaty Sword Attack Damage")]
         public int SwordDamage;
         [DefaultValue(100000000)]
         [Label("Super Cheaty Yoyo Attack Damage")]
         public int YoyoDamage;
-    }
-    [Label("Armor")]
-    [SeparatePage]
-    public class SuperCheatyConfigArmor : ModConfig
-    {
-        public override ConfigScope Mode => ConfigScope.ServerSide;
+
         [Label("Super Cheaty Tank Armor Defense")]
         [Tooltip("Helmet\nBreastplate\nLeggings")]
         [Range(0, 100000000)]
@@ -91,12 +79,7 @@ namespace CheatyToolsReloaded
         [Label("Super Cheaty Summoner Armor Minion Slot Multiplier")]
         [Range(0, 100000000)]
         public int SummonerMinionMultiplier;
-    }
-    [Label("Accessories")]
-    [SeparatePage]
-    public class SuperCheatyConfigAccessories : ModConfig
-    {
-        public override ConfigScope Mode => ConfigScope.ServerSide;
+
         [DefaultValue(100000000)]
         [Label("Super Cheaty Wings Flight Duration")]
         public int WingFlightTime;
